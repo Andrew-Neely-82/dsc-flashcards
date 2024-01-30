@@ -1,6 +1,6 @@
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import "@/app/globals.scss";
+import "@/app/styling/globals.scss";
 
 import Button from "@mui/material/Button";
 

@@ -5,8 +5,8 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import MuiCard from "@mui/material/Card";
 import Box from "@mui/material/Box";
+import "@/app/styling/globals.scss";
 import * as React from "react";
-import "@/app/globals.scss";
 
 const Card = ({ title }) => {
   return (
@@ -15,12 +15,15 @@ const Card = ({ title }) => {
         <MuiCard variant="outlined">
           <React.Fragment>
             <CardContent>
+              {/*  */}
               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                 Subject: flashcard.subject
               </Typography>
+              {/*  */}
               <Typography variant="h5" component="div">
                 flashcard.question
               </Typography>
+              {/*  */}
             </CardContent>
             {/*Flip Button */}
             <CardActions>

@@ -1,6 +1,6 @@
 import { Card, Header } from "./components/export";
 import { Footer } from "./sections/export";
-import "@/app/globals.scss";
+import "@/app/styling/globals.scss";
 
 export default function Home() {
   return (
