@@ -1,19 +1,14 @@
-@import "./defaults.scss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+@import "./defaults.scss";
 
 .main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column !important;
+  flex-direction: column;
   padding: 6rem;
 
   @media (max-width: 400px) {
@@ -25,21 +20,6 @@
   }
 }
 
-.ButtonGroup {
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-  width: 100%;
-
-  @media screen and (max-width: 400px) {
-    margin-top: 1rem;
-  }
-}
-
-.made {
-  display: flex;
-}
-
 .title-wrapper {
   display: flex;
   flex-direction: column;
@@ -47,8 +27,58 @@
   align-items: center;
   width: 100%;
 }
+
 .card {
+  width: 100%;
+  margin-left: auto;
+  margin-block: 5rem auto;
+
+  @media screen and (max-width: 390px) {
+    margin-block: auto;
+  }
+}
+
+.MuiPaper-root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40rem;
+  height: 20rem;
+  margin-inline: auto;
+
+  @media screen and (max-width: 390px) {
+    width: 20rem;
+    height: 15rem;
+  }
+
+  .MuiTypography-body1 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+.MuiCardContent-root {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.MuiCardActions-root {
+  justify-content: right;
+}
+
+.MuiTypography-h5 {
+  text-wrap: balance;
+  margin-inline: auto;
   margin-block: auto;
+}
+
+.MuiButtonBase-root {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 .Footer {
@@ -60,16 +90,6 @@
   margin: 0 1rem 1rem;
 }
 
-.MuiCardActions-root {
-  justify-content: right;
-}
-
-.footer-rule {
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
-
-  @media screen and (max-width: 400px) {
-    display: none;
-  }
+.made {
+  display: flex;
 }
