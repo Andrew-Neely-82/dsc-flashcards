@@ -1,18 +1,12 @@
-import "@/app/globals.scss";
-import { Card } from "./components/export";
+import { Card, Header } from "./components/export";
 import { Footer } from "./sections/export";
+import "@/app/globals.scss";
 
 export default function Home() {
   return (
     <main className="main min-h-screen">
-      <div className="title-wrapper">
-        <hr />
-        <h1 className="title">DSC Flashcards</h1>
-        <hr />
-      </div>
-      <div>
-        <Card />
-      </div>
+      <Header />
+      <Card />
       <div className="footer-rule">
         <hr />
       </div>
